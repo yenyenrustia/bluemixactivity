@@ -1,0 +1,22 @@
+{
+	"name": "BLMTradeoffAnalytics1",
+	"version": "0.0.1",
+	"description": "A test application in node.js to integrate with IBM Watson's Tradeoff Analytics feature",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"author": "Bernie Michalik",
+	"license": "MIT License",
+	"dependencies": {
+		"express": "4.13.x",
+		"cfenv": "1.0.x",
+    	"body-parser": "~1.15.2",
+    	"ejs": "~2.5.2",
+    	"watson-developer-cloud": "^2.2.0"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	} 
+}

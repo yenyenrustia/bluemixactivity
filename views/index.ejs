@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PreFinal Bitaw ni oyy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87949880-1', 'auto');
+  ga('send', 'pageview');
+</script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="icon" href="https://www.ibm.com/watson/developercloud/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Query Watson</a></li>
+        <li><a href="/about">About</a></li>
+    </div>
+  </div>
+</nav>
+
+<h3>Watson input form</h3>
+<!-- <form class="form-horizontal"> -->
+<form class="form-horizontal" role="form" style="width: 50%;" action="/askWatson" method="POST">
+
+<fieldset>
+
+<!-- Form Name -->
+
+<!-- <legend>Enter the information pertaining to your new phone here:</legend> -->
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectmultiple">Preferred Brands</label>
+  <div class="col-md-4">
+    <select id="preferredbrands" name="preferredbrands" class="form-control" multiple="multiple">
+      <option value="Apple">Apple</option>
+      <option value="HTC">HTC</option>
+      <option value="Samsung">Samsung</option>
+      <option value="Sony">Sony</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="maxprice">Max Price</label>  
+  <div class="col-md-4">
+  <input id="maxprice" name="maxprice" type="text" placeholder="0.00" class="form-control input-md">
+  <span class="help-block">Enter a dollar amount</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="weight">Is weight important</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="weight-0">
+      <input type="radio" name="weight" id="weight-0" value="Weight1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="weight-1">
+      <input type="radio" name="weight" id="weight-1" value="Weight0">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit">Ready?</label>
+  <div class="col-md-4">
+    <button id="submit" name="ask_watson" class="btn btn-primary">Ask Watson</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+	 
+</form>  
+
+
+<footer class="container-fluid text-center">
+  <p>Built by Char Lungs powxshtszzzz</p>
+</footer>
+
+</body>
+</html>
